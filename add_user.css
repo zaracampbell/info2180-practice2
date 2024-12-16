@@ -1,0 +1,98 @@
+/* General Reset */
+body, h1, label, input, select, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e0f7fa);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Container */
+.form-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Title */
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+/* Input and Select Fields */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #43a047;
+    transform: scale(1.05);
+}
+
+/* Error and Success Messages */
+.error-message, .success-message {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+.error-message {
+    background: #e57373;
+}
+
+.success-message {
+    background: #81c784;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+    }
+}
