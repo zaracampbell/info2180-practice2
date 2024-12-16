@@ -1,98 +1,108 @@
 /* General Reset */
-body, h1, label, input, select, button, div {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa, #e0f7fa);
-    color: #333;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-/* Form Container */
+/* Form Container Styling */
 .form-container {
-    background: #ffffff;
     width: 100%;
     max-width: 400px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+    color: #333;
 }
 
 /* Form Title */
 .form-container h1 {
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #4caf50;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    color: #002642;
 }
 
-/* Input and Select Fields */
+/* Input Fields */
 input, select {
+    display: block;
     width: 100%;
     padding: 10px;
-    margin: 10px 0 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
 input:focus, select:focus {
-    border-color: #4caf50;
+    border: 1px solid #0465aa;
     outline: none;
+    background-color: #fff;
 }
 
-/* Submit Button */
+/* Buttons */
 button {
     width: 100%;
     padding: 12px;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
-    background: #4caf50;
     color: white;
+    background-color: #0465aa;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background: #43a047;
-    transform: scale(1.05);
+    background-color: #034a86;
+    transform: scale(1.02);
 }
 
-/* Error and Success Messages */
+/* Messages */
 .error-message, .success-message {
-    font-size: 0.9rem;
+    font-size: 14px;
     margin-bottom: 15px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 5px;
     color: white;
+    text-align: center;
 }
 
 .error-message {
-    background: #e57373;
+    background-color: #e57373; /* Red for error */
 }
 
 .success-message {
-    background: #81c784;
+    background-color: #81c784; /* Green for success */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #342e2e;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     .form-container {
-        padding: 20px;
+        padding: 15px;
     }
 
     input, select, button {
-        font-size: 0.9rem;
+        font-size: 13px;
     }
 }
